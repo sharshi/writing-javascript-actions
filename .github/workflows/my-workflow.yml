@@ -8,10 +8,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Extract branch name
+    - name: This branch is sharshi-patch-1
       if: github.ref == 'refs/heads/sharshi-patch-1'
       run: echo This branch is sharshi-patch-1.
-    - name: Extract branch name
+    - name: This branch is dev
       if: github.ref == 'refs/heads/dev'
       run: echo This branch is dev.
 
