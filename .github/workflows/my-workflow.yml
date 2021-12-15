@@ -11,4 +11,5 @@ jobs:
     - name: Extract branch name
       shell: bash
       run: echo |
-        ${GITHUB_HEAD_REF}
+        ${GITHUB_REF##*/}
+
