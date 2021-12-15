@@ -13,6 +13,6 @@ jobs:
       run: echo |
         ${{ ${GITHUB_REF##*/} }}
     - name: My first step
-      if: ${{ ${GITHUB_REF##*/} == 'sharshi-patch-1' }}
+      if: github.ref == 'refs/heads/sharshi-patch-1'
       run: echo This event is a pull request that had an assignee removed.
 
