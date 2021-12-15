@@ -10,5 +10,8 @@ jobs:
     steps:
     - name: Extract branch name
       if: github.ref == 'refs/heads/sharshi-patch-1'
-      run: echo This event is a pull request that had an assignee removed.
+      run: echo This branch is sharshi-patch-1.
+    - name: Extract branch name
+      if: github.ref == 'refs/heads/dev'
+      run: echo This branch is dev.
 
